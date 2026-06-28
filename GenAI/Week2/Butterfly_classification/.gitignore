@@ -1,4 +1,2 @@
-/test
-/train
 /best_butterfly_model.pth
 *.pth
