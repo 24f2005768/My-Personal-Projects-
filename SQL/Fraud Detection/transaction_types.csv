@@ -1,5 +1,3 @@
-TransactionTypeID,TypeName
-1,Deposit
-2,Withdrawal
-3,Transfer
-4,Payment
+version https://git-lfs.github.com/spec/v1
+oid sha256:8489185085dbbe6b3480adfb4349abfe155cd66f191bf8ba3999a4e8a210ad1c
+size 71

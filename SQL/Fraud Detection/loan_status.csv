@@ -1,4 +1,3 @@
-LoanStatusID,StatusName
-1,Active
-2,Paid Off
-3,Overdue
+version https://git-lfs.github.com/spec/v1
+oid sha256:f1a9a247d6e6d4d6ab8de3cfeb83a32e43128cb8461d0f6396d26a9e1caed448
+size 54

@@ -1,6 +1,3 @@
-MH001,P001,2022-12-10,I20.0,Coronary Artery Disease,D001
-MH002,P001,2023-07-30,I25.10,Hypertensive Heart Disease,D002
-MH003,P002,2023-08-01,I25.10,Hypertensive Heart Disease,D002
-MH004,P003,2023-08-01,I20.9,Unstable Angina,D003
-MH005,P004,2023-08-01,I25.5,Ischemic Cardiomyopathy,D004
-MH006,P005,2023-08-02,I50.9,"HeartFailure, Unspecified",D003
+version https://git-lfs.github.com/spec/v1
+oid sha256:cbd350cbe69cc259584a15709b5c695a0f53c0ad1c4984268817eab0c093cd9b
+size 350
