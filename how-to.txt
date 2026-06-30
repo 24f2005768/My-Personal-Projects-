@@ -1,0 +1,22 @@
+On Ubuntu (Computer):
+bash
+# Before switching to Windows
+git add . && git commit -m "Work on Ubuntu" && git push
+
+# After switching from Windows
+git pull
+
+# One command to rule them all
+git add . && git commit -m "Sync $(date '+%Y-%m-%d %H:%M')" && git push && git pull origin main --allow-unrelated-histories
+
+
+On Windows (Laptop):
+powershell
+# Before switching to Ubuntu
+git add . && git commit -m "Work on Windows" && git push
+
+# After switching from Ubuntu
+git pull
+
+# One command to rule them all
+git add .; git commit -m "Sync $(Get-Date -Format 'yyyy-MM-dd HH:mm')"; git push; git pull origin main --allow-unrelated-histories
