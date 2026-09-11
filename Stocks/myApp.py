@@ -54,10 +54,10 @@ risk_free_rate = st.sidebar.number_input(
 ) / 100
 
 run_Backtest = st.sidebar.checkbox("Run MA Crossover BAcktest", value = False)
-backtest_short_windoq = st.sidebar.number_input(
+backtest_short_window = st.sidebar.number_input(
     "Backtest Short MA", min_value = 2, max_value = 100, value = 20
 )
-backtest_long_windoq = st.sidebar.number_input(
+backtest_long_window = st.sidebar.number_input(
     "Backtest Short MA", min_value = 5, max_value = 300, value = 50
 )
 
@@ -138,7 +138,7 @@ def backtest_ma_crossover(price_data, short_window, long_window):
     df['Strategy_Return'] = df['Market_Return'] * df['Signal'].shift(1)
 
     df['Cumulative_Market'] = (1 + df['Market_Return'].fillna(0)).cumprod()
-    df['Cumulative_Strategy'] = (1 + df['Strategy_Return'.fillna(0)]).cumprod()
+    df['Cumulative_Strategy'] = (1 + df['Strategy_Return'].fillna(0)).cumprod()
 
     trades = df[df['Position_Change'] != 0]
     num_trades = int(len(trades))
@@ -512,7 +512,61 @@ if data is not None and not data.empty:
         )
         st.plotly_chart(dd_fig, use_container_width=True)
 
-    
+    # MA Crossover Backtest 
+    if run_Backtest:
+        st.subheader("MA Crossover Backtest")
+        if backtest_short_window >= backtest_long_window:
+            st.warning("Short MA window should be smaller than the Long MA window for a meaningful crossover strategy.")
+        else:
+            bt_df, bt_metrics = backtest_ma_crossover(data, backtest_short_window, backtest_long_window)
+
+            bcol1, bcol2, bcol3, bcol4 = st.columns(4)
+            with bcol1:
+                st.metric("Strategy Return", f"{bt_metrics['total_strategy_return'] * 100:.2f}%")
+            with bcol2:
+                st.metric("Buy & Hold Return", f"{bt_metrics['total_market_return'] * 100:.2f}%")
+            with bcol3:
+                st.metric("Number of Trades", f"{bt_metrics['num_trades']}")
+            with bcol4:
+                st.metric("Win Rate", f"{bt_metrics['win_rate'] * 100:.2f}%")
+
+            st.metric("Strategy Max Drawdown", f"{bt_metrics['strategy_max_drawdown'] * 100:.2f}%")
+
+            bt_fig = go.Figure()
+            bt_fig.add_trace(
+                go.Scatter(
+                    x = bt_df.index,
+                    y = (bt_df['Cumulative_Strategy'] - 1) * 100,
+                    mode = 'lines',
+                    name = f'MA({backtest_short_window}/{backtest_long_window}) Strategy',
+                    line = dict(color = '#2ca02c', width = 2)
+            )
+            )
+
+            bt_fig.add_trace(
+                go.Scatter(
+                    x = bt_df.index,
+                    y = (bt_df['Cumulative_Market'] - 1) * 100,
+                    mode = 'lines',
+                    name = 'Buy & Hold',
+                    line = dict(color = '#1f77b4', width = 2, dash = 'dash')
+                )
+            )
+            bt_fig.update_layout(
+                title = "Cumulative Return: Strategy vs Buy & Hold",
+                template = 'plotly_white',
+                height = 400,
+                yaxis_title = 'Cumulative Return (%)',
+                hovermode = 'x unified',
+                legend = dict(orientation = 'h', yanchor = 'bottom', y = 1.02, xanchor = 'right', x = 1)
+            )
+            st.plotly_chart(bt_fig, use_container_width = True)
+
+            st.caption(
+                "Backtest assumes the strategy holds the stock while Short MA > Long MA and is in cash otherwise, "
+                "with no transaction costs or slippage. This is illustrative, not investment advice."
+            )
+
     st.divider()
     # Download data option
     st.subheader("📥 Download Data")
