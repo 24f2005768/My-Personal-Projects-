@@ -1,0 +1,5 @@
+streamlit>=1.30
+python-dotenv>=1.0
+sqlalchemy>=2.0
+langchain-core>=0.2
+langchain-groq>=0.1

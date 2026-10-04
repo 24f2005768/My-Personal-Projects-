@@ -1,0 +1,13 @@
+pandas
+numpy
+scikit-learn
+imbalanced-learn
+xgboost
+lightgbm
+shap
+fastapi
+uvicorn[standard]
+pydantic
+streamlit
+plotly
+joblib
