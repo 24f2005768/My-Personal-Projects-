@@ -1,0 +1,22 @@
+prompt-to-sql/
+├── app.py
+├── requirements.txt
+├── .env.example
+├── .gitignore
+├── utils/
+│   ├── __init__.py
+│   ├── db_engine.py          ← NEW: connection manager
+│   ├── dialects.py           ← NEW: per-dialect prompt rules
+│   ├── safety.py             ← NEW: SQL guard
+│   ├── database.py           ← refactored
+│   ├── sql_generator.py      ← refactored
+│   ├── chart_builder.py
+│   ├── query_cache.py
+│   ├── auth.py
+│   ├── history.py
+│   ├── explainer.py
+│   ├── conversation.py
+│   ├── analytics.py          ← optional (prebuilt queries only for retail_sales)
+│   └── reports.py
+└── data/
+    └── retailiq.db           (default local SQLite)

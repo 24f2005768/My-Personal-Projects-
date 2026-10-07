@@ -1,0 +1,10 @@
+data/raw/
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+venv/
+.venv/
+tests/results.csv
+tests/logs/
