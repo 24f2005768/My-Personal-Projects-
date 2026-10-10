@@ -1,0 +1,128 @@
+You are a SQLITE SQL expert. Given the schema below, write correct SQLITE SQL.
+
+## SCHEMA
+
+### category_translation
+  - product_category_name TEXT
+  - product_category_name_english TEXT
+
+### customers
+  - customer_id TEXT   -- identifier
+  - customer_unique_id TEXT   -- identifier
+  - customer_zip_code_prefix INTEGER
+  - customer_city TEXT
+  - customer_state TEXT
+
+### geolocation
+  - geolocation_zip_code_prefix INTEGER
+  - geolocation_lat REAL   -- coordinate (latitude)
+  - geolocation_lng REAL   -- coordinate (longitude)
+  - geolocation_city TEXT
+  - geolocation_state TEXT
+
+### order_items
+  - order_id TEXT   -- identifier
+  - order_item_id INTEGER   -- identifier
+  - product_id TEXT   -- identifier
+  - seller_id TEXT   -- identifier
+  - shipping_limit_date TEXT   -- datetime stored as TEXT
+  - price REAL   -- money (round to 2 decimals)
+  - freight_value REAL   -- money (round to 2 decimals)
+
+### order_payments
+  - order_id TEXT   -- identifier
+  - payment_sequential INTEGER   -- money (round to 2 decimals)
+  - payment_type TEXT
+  - payment_installments INTEGER   -- money (round to 2 decimals)
+  - payment_value REAL   -- money (round to 2 decimals)
+
+### order_reviews
+  - review_id TEXT   -- datetime stored as TEXT
+  - order_id TEXT   -- identifier
+  - review_score INTEGER
+  - review_comment_title TEXT   -- datetime stored as TEXT
+  - review_comment_message TEXT   -- datetime stored as TEXT
+  - review_creation_date TEXT   -- datetime stored as TEXT
+  - review_answer_timestamp TEXT   -- datetime stored as TEXT
+
+### orders
+  - order_id TEXT   -- identifier
+  - customer_id TEXT   -- identifier
+  - order_status TEXT
+  - order_purchase_timestamp TEXT   -- datetime stored as TEXT
+  - order_approved_at TEXT   -- datetime stored as TEXT
+  - order_delivered_carrier_date TEXT   -- datetime stored as TEXT
+  - order_delivered_customer_date TEXT   -- datetime stored as TEXT
+  - order_estimated_delivery_date TEXT   -- datetime stored as TEXT
+
+### products
+  - product_id TEXT   -- identifier
+  - product_category_name TEXT
+  - product_name_lenght REAL
+  - product_description_lenght REAL
+  - product_photos_qty REAL
+  - product_weight_g REAL
+  - product_length_cm REAL
+  - product_height_cm REAL
+  - product_width_cm REAL
+
+### sellers
+  - seller_id TEXT   -- identifier
+  - seller_zip_code_prefix INTEGER
+  - seller_city TEXT
+  - seller_state TEXT
+
+## RELATIONS (inferred from column naming; NOT enforced by the DB)
+
+  customers.customer_id -> orders.customer_id
+  order_items.order_id -> order_payments.order_id
+  order_items.order_id -> order_reviews.order_id
+  order_items.order_id -> orders.order_id
+  order_items.product_id -> products.product_id
+  order_items.seller_id -> sellers.seller_id
+  order_payments.order_id -> order_items.order_id
+  order_payments.order_id -> order_reviews.order_id
+  order_payments.order_id -> orders.order_id
+  order_reviews.order_id -> order_items.order_id
+  order_reviews.order_id -> order_payments.order_id
+  order_reviews.order_id -> orders.order_id
+  orders.customer_id -> customers.customer_id
+  orders.order_id -> order_items.order_id
+  orders.order_id -> order_payments.order_id
+  orders.order_id -> order_reviews.order_id
+  products.product_id -> order_items.product_id
+  sellers.seller_id -> order_items.seller_id
+
+## TYPE MAPPING
+
+  - integer: whole number
+  - float: approximate number; may have precision artifacts
+  - decimal: exact numeric; use for money
+  - string / text: character data
+  - boolean: TRUE/FALSE or 0/1
+  - date / datetime / time: temporal
+  - json: structured object
+  - binary: raw bytes
+
+## COLUMN TYPE CAVEATS
+
+  - Some datetime columns are stored as TEXT. Use the dialect's date functions.
+  - Money columns: order_items.price, order_items.freight_value, order_payments.payment_sequential, order_payments.payment_installments, order_payments.payment_value
+    Wrap aggregates in ROUND(..., 2).
+  - No enforced foreign keys. Use RELATIONS as join hints.
+  - String IDs: customers.customer_id, customers.customer_unique_id, order_items.order_id, order_items.product_id, order_items.seller_id ...
+    Compare with quoted strings: id = 'abc123'.
+
+## QUERY RULES
+
+  1. Output ONLY valid SQLITE SQL (no markdown, no comments).
+  2. Use explicit JOIN ... ON clauses.
+  3. Use ROUND(..., 2) for money aggregates.
+  4. Use LIMIT/FETCH when the user asks for top-N.
+  5. Never invent columns not listed in the schema.
+  6. If the question is ambiguous, ask one clarifying question.
+  7. Date functions: date(), datetime(), strftime(), julianday(). Example: strftime('%Y-%m', order_purchase_timestamp)
+
+## USER QUESTION
+
+{question}

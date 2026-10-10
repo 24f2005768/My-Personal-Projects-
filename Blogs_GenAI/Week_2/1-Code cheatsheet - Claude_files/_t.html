@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!-- saved from url=(0092)https://7e0f3923-8c03-487b-9047-3ca41a468017.frame.claudeusercontent.com/_f/1791573990-0743/ -->
+<html data-theme="dark" style="color-scheme: dark;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><script>window.__FRAME_PREAMBLE={"v":1,"cred":"cookie","capabilities":{"artifact":"artifact.w_ePPE-a.js","assets":"assets.DOAjpBS9.js","comments":"comments.BcqPhVn7.js","db":"db.zFlAA4qL.js","dictation":"dictation.f3j7VXQ8.js","downloads":"downloads.axDW2QAi.js","embed":"embed.SWCZLzn6.js","endpoints":"endpoints.BPfoKaE1.js","files":"files.IkpCjcgM.js","mcp":"mcp.kl0G36TA.js","network":"network.B5UA9Su4.js","permissions":"permissions.6yWoDecA.js","reads":"reads.Bgov9hIw.js","room":"room.Dy3vHyq9.js","sample":"sample.D5wHJkl_.js","self":"artifact.w_ePPE-a.js","user":"user.CB0zJsP2.js"},"transforms":"_transforms.C_b-uWUJ.js","comments":"_comments.CVOoGJSh.js","translate":"_translate.DqxC5ek1.js","ldx":"_ldx.B4FSryPi.js"}                                                                                                                                                                                                              </script><script>(function(){"use strict";function fr(t){return t==="cookie"||t==="query"?t:void 0}function dr(t){return typeof t=="number"&&Number.isSafeInteger(t)&&t>0?t:void 0}var to=3e5;function hr(t,e){try{const r=t("navigation")[0],n=[r.responseStart,r.redirectEnd-r.redirectStart,r.domContentLoadedEventStart,e(),r.connectEnd-r.domainLookupStart,r.responseStart-r.requestStart];r.requestStart>0||(n.length=4);for(let a=0;a<n.length;a++)if(n[a]>=0&&n[a]<=3e5)n[a]=n[a]|0;else{if(a<4)return;n.length=4}return n}catch{return}}var pr=["light","dark","system"],mr=/^[A-Za-z0-9_-]{1,64}$/,Lt=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,vr=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function yr(t){const e=t.toLowerCase();return e.startsWith("data-")||e.startsWith("aria-")||vr.has(e)}var Ot="data-ldx-props";function _r(t,e){if(e.toLowerCase()===Ot)return!0;const r=t.getAttribute(Ot);if(r===null)return!1;try{const n=JSON.parse(r);if(n===null||typeof n!="object"||Array.isArray(n))return!0;const a=e.toLowerCase();return Object.keys(n).some(s=>s.toLowerCase()===a)}catch{return!0}}var ro="http://www.w3.org/1999/xhtml",gr="http://www.w3.org/2000/svg",wr=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),br=new Set(["script","style"]);function Er(t){const e=t.localName.toLowerCase();return t.namespaceURI==="http://www.w3.org/1999/xhtml"?!wr.has(e):t.namespaceURI===gr?!br.has(e):!1}function tt(t,e){return t===e||(t===160||t===32)&&(e===160||e===32)}function Sr(t,e){const r=t.length,n=e.length;let a=0;for(;a<r&&a<n&&tt(t.charCodeAt(a),e.charCodeAt(a));)a++;let s=0;for(;s<r-a&&s<n-a&&tt(t.charCodeAt(r-1-s),e.charCodeAt(n-1-s));)s++;return{p:a,s}}function kr(t,e){const r=t.firstChild;if(t.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){t.textContent=e;return}const n=r.data,a=n.length,s=e.length,{p:l,s:c}=Sr(n,e);l===a&&c===0&&a===s||r.replaceData(l,a-l-c,e.slice(l,s-c));const T=r.data,_=t.ownerDocument.getSelection?.()??null,v=_!==null&&_.rangeCount>0&&(_.anchorNode===r||_.focusNode===r)?{anchor:_.anchorNode,anchorOffset:_.anchorOffset,focus:_.focusNode,focusOffset:_.focusOffset}:null;let h=-1,k=-1;for(let p=0;p<T.length&&p<e.length;p++){const F=T.charCodeAt(p),R=e.charCodeAt(p);F!==R&&tt(F,R)&&(h<0&&(h=p),k=p)}const O=h>=0;if(O&&r.replaceData(h,k-h+1,e.slice(h,k+1)),O&&v!==null&&v.anchor!==null&&v.focus!==null)try{_.setBaseAndExtent(v.anchor,v.anchorOffset,v.focus,v.focusOffset)}catch{}}var Ar=new Set(["html","head","body","frameset"]);function Rr(t){return t.namespaceURI==="http://www.w3.org/1999/xhtml"&&Ar.has(t.localName)}function Tr(t){if(t===null||typeof t!="object")return!1;const e=t;if(typeof e.target!="string"||!mr.test(e.target)||e.text!==void 0&&typeof e.text!="string")return!1;if(e.attrsSet!==void 0){if(e.attrsSet===null||typeof e.attrsSet!="object")return!1;for(const[r,n]of Object.entries(e.attrsSet))if(!Lt.test(r)||typeof n!="string")return!1}if(e.attrsRemoved!==void 0){if(!Array.isArray(e.attrsRemoved))return!1;for(const r of e.attrsRemoved)if(typeof r!="string"||!Lt.test(r))return!1}return!0}function Lr(t,e){if(t===null||typeof t!="object")return!1;const{seq:r,elements:n}=t;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let a=0;a<n.length;a++)if(!e(n[a]))return!1;return!0}function Or(t){return t===null||typeof t!="object"?!1:Lr(t.__frame_patch,Tr)}function Mr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_init;return e!==null&&typeof e=="object"}function Pr(t){return t!==null&&typeof t=="object"&&t.__frame_size_poke===!0}function Nr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_host_visible;return e!==null&&typeof e=="object"&&typeof e.visible=="boolean"}function Cr(t){if(t===null||typeof t!="object")return!1;const e=t.__frame_theme;if(e===null||typeof e!="object")return!1;const r=e.theme;return typeof r=="string"&&pr.includes(r)}var Fr=["ok","empty","snapshot_error","snapshot_timeout","unclonable","oversize","unavailable","restore_error","withheld"],jr=["TypeError","RangeError","ReferenceError","SyntaxError","DataCloneError","QuotaExceededError","AbortError","TimeoutError","SecurityError","Error","other"];function xr(t){return typeof t=="string"&&jr.includes(t)?t:"other"}var Ir=Object.freeze({until:null,now:!1}),Dr="__claude_hot",Hr="__claude_hot_in",qr=/^__claude_hot(?:_in)?(?::|$)/,Mt=/^[0-9a-z]{1,32}$/,rt=t=>t===void 0?Dr:"__claude_hot:"+t,Le=t=>t===void 0?Hr:"__claude_hot_in:"+t;function Br(t,e){const r=[];for(let n=0;n<t.length;n++){const a=t.key(n);a!==null&&a!==e&&qr.test(a)&&r.push(a)}for(const n of r)t.removeItem(n)}function Ur(t){let e=null;try{e=B(JSON.parse(t)?.hot)}catch{return null}return e===null||typeof e.k!="string"||!Mt.test(e.k)?null:he(e.g)?{k:e.k,g:e.g}:{k:e.k}}var no=262144,Kr=3e3,Gr=5e3,Pt=/^[a-z0-9._:-]{1,64}$/,$r=["none","hot-restart","hard-reload"],zr=["asset","doc","added","removed"],Wr=1500,Vr=/^[0-9a-f]{64}$/;function B(t){return t!==null&&typeof t=="object"?t:null}function he(t){return typeof t=="number"&&Number.isInteger(t)&&t>=0&&t<2**31}function Nt(t){return t===void 0||typeof t=="number"&&Number.isFinite(t)}function Xr(t){return t===void 0||typeof t=="string"&&Pt.test(t)}function Ct(t){const e=B(t);return e!==null&&(e.until===null||typeof e.until=="number"&&Number.isFinite(e.until))&&typeof e.now=="boolean"}function nt(t){const e=B(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Nt(e.seq)&&typeof e.handoff=="string"&&Fr.includes(e.handoff)&&Xr(e.note)}function Ft(t){const e=B(t);return e!==null&&he(e.gen)&&(e.phase==="final"||e.phase==="pending")&&(e.from===null||nt(e.from))}function Yr(t){const e=B(t);return e!==null&&e.kv===1&&he(e.gen)&&nt(e.from)&&Object.hasOwn(e,"data")}function Jr(t){const e=B(t);return e!==null&&e.__frame_hot_snapshot===!0&&he(e.gen)&&typeof e.timeoutMs=="number"&&e.timeoutMs>=0&&e.timeoutMs<=6e4&&(e.handoff===void 0||typeof e.handoff=="boolean")&&(e.deadline===void 0||Ct(e.deadline))&&Nt(e.seq)&&(e.note===void 0||typeof e.note=="string")&&(e.key===void 0||typeof e.key=="string")}function Zr(t){const e=B(t);return e!==null&&e.__frame_hot_start===!0&&he(e.gen)&&nt(e.from)}function Qr(t){return typeof t=="string"&&t.length>=1&&t.length<=128}function jt(t){return B(t)!==null&&!Array.isArray(t)}function en(t){const e=B(t);return e!==null&&e.__frame_cap_grant===!0&&typeof e.cap=="string"&&Qr(e.ver)&&(e.grant===void 0||jt(e.grant))&&(e.budgets===void 0||jt(e.budgets)&&Object.values(e.budgets).every(Number.isFinite))&&(e.brokerGen===void 0||he(e.brokerGen))}function tn(t){const e=B(t);return e!==null&&e.__frame_cap_rewired===!0&&(e.caps===void 0||Array.isArray(e.caps)&&e.caps.every(r=>typeof r=="string"))&&(e.brokerGen===void 0||he(e.brokerGen))}function Ge(t){const e=B(t);return e!==null&&typeof e.ver=="string"&&e.ver.length<=128&&Number.isFinite(e.seq)}function xt(t){if(t==null||typeof t=="string")return!0;const e=B(t);return e!==null&&typeof e.doc=="string"&&typeof e.profile=="string"}function rn(t){const e=B(t);return e!==null&&typeof e.path=="string"&&zr.includes(e.kind)&&xt(e.from)&&xt(e.to)}function nn(t){return t===null?null:Object.freeze(t.filter(rn))}function on(t){const e=B(t);return e!==null&&e.__frame_hot_update===!0&&Number.isFinite(e.id)&&Ge(e.from)&&Ge(e.to)&&(e.changed===null||Array.isArray(e.changed))&&$r.includes(e.required)&&Ct(e.deadline)&&typeof e.verdictTimeoutMs=="number"&&e.verdictTimeoutMs>=0&&e.verdictTimeoutMs<=6e4&&(e.preflight===void 0||typeof e.preflight=="string"&&Vr.test(e.preflight))}function an(t){const e=B(t);return e!==null&&e.__frame_hot_readdress===!0&&Ge(e.from)&&Ge(e.to)}var pe=/^[\w.-]+\.js$/;function sn(t,e,r){return r?"inert":typeof e=="string"&&pe.test(e)?t?[e]:"inert":t?"inert":"framed"}var It=Object.freeze({[Symbol("claude.hot.restart")]:!0});function Dt(t,e){let r;try{r=t??sessionStorage}catch{return null}const n=rt(e?.k),a=Le(e?.k);let s=null;try{s=r.getItem(n)}catch{}try{r.removeItem(n)}catch{}try{Br(r,a)}catch{}let l=null;if(s!==null&&!(e!==null&&e.g===void 0))try{const c=JSON.parse(s);Yr(c)&&(e===null||c.gen===e.g)&&(l=c)}catch{}if(l===null)try{r.removeItem(a)}catch{}return l}function Ht(){const t=/^\/_f\/([^/]{1,128})\//.exec(location.pathname);return t?t[1]:""}var ln=/^[^/\\?#]{1,128}$/,ot=t=>ln.test(t)&&t!=="."&&t!=="..";function qt(t,e,r){const n=new URL(t),a="/_f/"+e+"/";if(!e||!n.pathname.startsWith(a)||!ot(r))return null;const s=n.search.slice(1).split("&").filter(l=>!/^__frame_t(?:=|$)/.test(l)).join("&");return n.origin+"/_f/"+r+"/"+n.pathname.slice(a.length)+(s?"?"+s:"")+n.hash}var $e="{}";function Oe(t){if(!t)return null;const e={ver:t.ver,handoff:t.handoff};return t.seq!==void 0&&(e.seq=t.seq),t.note!==void 0&&(e.note=t.note),e}function Bt(t,e){return t!==null&&t.note===void 0&&e?.note!==void 0?{...t,note:e.note}:t}function Ut(t){const e=t?.k;return e!==null&&typeof e=="object"?e:void 0}function cn(t,e,r,n=null){const a=setTimeout,s=clearTimeout,l=queueMicrotask,c=performance.now.bind(performance),T=new TextEncoder;let _=null,v=null;try{_=history,v=_.replaceState.bind(_)}catch{}const h=(...o)=>{try{console.warn(...o)}catch{}};let k=Ht(),O=null;try{O=sessionStorage}catch{}const p={storage:O,fetch:typeof fetch=="function"?fetch.bind(globalThis):null,entry:location.origin+location.pathname+location.search,ver:k,priors:[],key:n?.k};let F=n?.k;const R=typeof requestAnimationFrame=="function"?requestAnimationFrame:o=>a(()=>o(c()),16);let g=e?.data??{},w=Oe(e?.from),j=e?.gen??0,I=e!==null,q=!1,G=!1,D=null,be=!1;const Fe=new AbortController;let je=null,U=null,Ee=null,xe=!1,le=()=>{};const ce=new Promise(o=>{le=o});let ve=!1,u=!1,b=!1,y,A=null,H=!1,X=!1,K=!1,te=!1,Y=!1,ye=!1;const _e=o=>{for(const f of[rt(o),Le(o)])try{O?.removeItem(f)}catch{}},$=(o,f)=>{try{f!==null&&r.post(o,f)}catch{}},Ie=()=>Y||=K&&(U===null||te),J=()=>{const o={__frame_hot:!0,ready:U!==null,accept:Ee!==null,demand:!0};ye=!Y,ye&&(o.booting=!0),ve&&(o.readData=!0),b&&(o.threw=!0),A?.assess&&(o.preflight=!0),$(o,D)};let De=!1,re=!1,ue=!1,He=!1;const Je=()=>{De||!be||ue||(De=!0,$({__frame_reveal_hold:!0},"*"))},Se=()=>new Promise(o=>{let f,d=0;const m=M=>{if(f===void 0)f=M;else if(M!==f||++d>=8){o();return}try{R(m)}catch{o()}};try{R(m)}catch{o()}}),qe=()=>{ue=!0,$({__frame_reveal_ready:!0},"*")},Be=o=>{re||(re=!0,o.then(f=>{if(f===!1)return;let d=null;try{d=A?.settle?.()??null}catch{}return(d===null?Se():new Promise(m=>{a(m,50),Promise.resolve(d).then(m,m)}).then(Se)).then(qe)}))},gt=()=>{if(He||!ue)return;He=!0;const o=()=>{try{A?.afterReveal?.()}catch{}};o(),Se().then(()=>{o(),qe()})},ee=(o=!1)=>{if(xe||U===null||!I||!G)return;xe=!0;const f=U,d=g;l(()=>{let m;try{m=f(d)}catch(P){throw le(!1),P}let M=!1;try{M=typeof m?.then=="function"}catch{}if(!M){le(!0);return}Promise.resolve(m).then(()=>le(!0),P=>{le(!1),l(()=>{throw P})})}),Be(o?ce:r.dcl.then(()=>ce))},fe=o=>typeof o=="string"&&Pt.test(o)?o:void 0,ke=o=>{const f={__frame_hot_restart:!0},d=fe(o?.note);d!==void 0&&(f.note=d),o?.required==="hard-reload"&&(f.required="hard-reload"),$(f,D)},Ue=Object.freeze({get data(){return G||(u=!0),!I&&!ve&&(ve=!0,G&&J()),g},get from(){return w},get gen(){return j},signal:Fe.signal,snapshot(o){typeof o=="function"&&(je=o)},ready(o){typeof o!="function"||U!==null||(U=o,Je(),J(),q&&$({__frame_hot_ready:!0,gen:j},D),ee())},accept(o){typeof o=="function"&&(Ee=o,J())},restart(o){const f={note:o?.note,required:o?.required};if(G){ke(f);return}const d=y;y={note:fe(d?.note)??f.note,required:d?.required==="hard-reload"||f.required==="hard-reload"?"hard-reload":void 0}}});let i=null,E=()=>{};const S=new Promise(o=>{E=o});let N=null;const Z=()=>N??=r.dcl.then(()=>{let o=!1;try{o=i!==null&&i.expect()}catch{}if(!o)return;const f=i.maxMs;return new Promise(d=>{S.then(d),a(d,f)})}),Q=()=>{if(!H||X||A===null)return;X=!0;const o=A;Z().then(()=>{try{ue||o.afterStart(Ut(e),!1)}catch{}})},de=o=>{e!==null&&u&&(ve=!0),g={},w=null,j=0;try{O?.removeItem(Le(n?.k))}catch{}e!==null&&!o&&Be(r.dcl.then(()=>U!==null?ce:void 0))},$n=()=>{H=!0,Be(Z().then(()=>U!==null?ce:void 0)),Q()};try{addEventListener("error",()=>{b||U!==null||(b=!0,J())})}catch{}const sr=()=>{a(()=>{!Y&&Ie()&&ye&&J()},0)};try{K=document.readyState==="complete",K||addEventListener("load",()=>{K=!0,sr()},{once:!0})}catch{K=!0}Ie(),ce.then(()=>{te=!0,sr()});let ge=-1,wt,bt,Ke=!0,Et=!1,St,Ze=null;const kt=o=>{const f=Ze===null;Ze=Ke&&o[0]!=="withheld"?o:["withheld",o[1],$e];let d=o[0];if(Ke&&d!=="withheld"){const M={ver:k,handoff:d};wt!==void 0&&(M.seq=wt),bt!==void 0&&(M.note=bt);try{if(O===null)throw new Error("no storage");O.setItem(rt(F),'{"kv":1,"gen":'+ge+',"from":'+JSON.stringify(M)+(St!==void 0?',"k":'+JSON.stringify(St):"")+',"data":'+(d==="ok"?o[2]:$e)+"}")}catch{d="unavailable"}}else{d="withheld",_e(F);try{A?.release?.()}catch{}}const m={__frame_hot_snapshotted:!0,gen:ge,handoff:d,bytes:o[1]};o[3]!==void 0&&(m.errName=o[3]),$(m,D),f&&(d==="snapshot_error"||d==="unclonable"||d==="oversize")&&h("claude.hot: snapshot",d,o[3])},Ae=o=>{try{return xr(o?.name)}catch{return"other"}},Re=(o,f,d=0)=>kt(f===void 0?[o,d,$e]:[o,d,$e,Ae(f)]),zn=o=>{if(o.gen<=ge)return;const f=ge>=0;if(ge=o.gen,wt=o.seq,bt=fe(o.note),typeof o.key=="string"&&Mt.test(o.key)&&o.key!==F&&(_e(F),F=o.key),Ke&&=o.handoff!==!1,f){Ze!==null?kt(Ze):Et&&$({__frame_hot_held:!0,gen:ge},D);return}Fe.abort();const d=Object.freeze({handoff:Ke,timeoutMs:o.timeoutMs,deadline:o.deadline??Ir}),m=je,M=()=>{if(Ke)try{St=A?.capture()}catch{}if(m===null){Re("empty");return}let L=!1;const z=a(()=>{L||(L=!0,Re("snapshot_timeout"))},Math.max(0,d.timeoutMs));Promise.resolve().then(()=>m(d)).then(Te=>{if(L)return;L=!0,s(z);let ne;try{ne=JSON.stringify(Te)}catch(At){Re("unclonable",At);return}if(typeof ne!="string"){Re("unclonable");return}let oe=ne.length;try{oe=T.encode(ne).length}catch{}if(oe>262144){Re("oversize",void 0,oe);return}kt(["ok",oe,ne])},Te=>{L||(L=!0,s(z),Re("snapshot_error",Te))})};let P=null;try{P=A?.holdForIme()??null}catch{}if(P===null)M();else{Et=!0,$({__frame_hot_held:!0,gen:ge},D);const L=()=>{Et=!1,M()};P.then(L,L)}},Wn=o=>{if(!q||I||U===null||o.gen!==j)return;let f=null;try{f=Dt(O,n&&{k:n.k,g:o.gen})}catch{}if(f!==null&&f.gen!==o.gen){f=null;try{O?.removeItem(Le(n?.k))}catch{}}g=f?.data??{},w=Bt(Oe(f?.from??o.from),Oe(o.from)),f!==null&&(j=f.gen),I=!0,q=!1;const d=Ut(f);ce.then(m=>{try{m&&A?.afterStart(d,!0)}catch{}}),ee(!0)},ir=o=>{const f=k,d=p.entry;let m="",M,P=null;try{if(m=location.href,M=_.state,P=qt(m,f,o),P!==null)if(v(M,"",P),location.pathname.startsWith("/_f/"+o+"/"))P=location.href;else return{failed:"navigate event canceled"}}catch(L){return{failed:Ae(L)}}k=p.ver=o,p.priors.push(f)>8&&p.priors.splice(1,1);try{p.entry=qt(d,f,o)??d}catch{}return[P,f,d,m,M]},Vn=({from:o,to:f})=>{let d,m;if(!ot(f.ver))d="adopt_failed",m="not a version path segment";else if(f.ver===k)d="adopted";else if(!k||o.ver!==k)d="stale";else{const P=ir(f.ver);"failed"in P?(d="adopt_failed",m=P.failed):d=P[0]===null?"adopt_skipped":"adopted"}m!==void 0&&h(`claude.hot: could not move this page's URL to its new version folder /_f/${f.ver}/ (${m})`);const M={__frame_hot_readdressed:!0,to:f.ver,at:k,outcome:d};$(M,D)};let Qe=0;const Xn=o=>{const f=Ee;if(f===null||o.id<=Qe)return;Qe=o.id;const d=A?.assess;if(o.preflight===void 0||d===void 0){lr(o,f);return}let m=!1;const M=z=>{m||(m=!0,s(L),o.id===Qe&&lr(o,f,z))},P=()=>M(d.timeout(o)),L=a(P,Wr+100);d.run(o,window).then(M,P)},lr=(o,f,d)=>{let m,M=!1,P=!1,L,z,Te=null;const ne=C=>{if(P)return!1;if(L!==void 0&&L!==C)return h(`claude.hot: u.${C}() ignored - u.${L}() was called first`),!1;const ae=L===void 0;return L=C,ae},oe=C=>{L="restart",h(`claude.hot: ${C} - restarting`)},At=()=>{if(!ne("adopt")||o.id!==Qe)return;const C=o.to.ver;if(et.required!=="none"){oe(`u.adopt() needs required 'none', it is '${et.required}'`);return}if(!ot(C)){oe("u.adopt() cannot address this version");return}if(!k||C===k)return;const ae=ir(C);if("failed"in ae){z="adopt_failed",oe(`adopt_failed ${ae.failed}; URL not changed`);return}const[W,Tt,Zn,ur,Qn]=ae;W===null?(z="adopt_skipped",h(`claude.hot: adopt_skipped - page already left /_f/${Tt}/; URL not changed, update still applied`)):z="adopted",Te=()=>{if(k===C){if(W!==null)try{if(location.href!==W)h("claude.hot: adopt_revert_skipped - update not applied; URL left where the page navigated");else{if(v(Qn,"",ur),location.href!==ur){h("claude.hot: adopt_revert_failed navigate event canceled - URL still at the new version");return}z="adopt_reverted",h("claude.hot: adopt_reverted - adopt() was called but the handler threw; URL restored")}}catch(eo){h(`claude.hot: adopt_revert_failed ${Ae(eo)} - URL still at the new version`);return}k=p.ver=Tt,p.entry=Zn,p.priors[p.priors.length-1]===Tt&&p.priors.pop(),W===null&&(z=void 0)}}},et=Object.freeze({from:{ver:o.from.ver,seq:o.from.seq},to:{ver:o.to.ver,seq:o.to.seq},changed:nn(o.changed),required:o.required,deadline:o.deadline,adopt:At,defer(){return ne("defer")&&et.deadline.now&&oe("u.defer() past the deadline"),It},restart(C){return ne("restart"),L==="restart"&&!P&&(m??=fe(C?.note),M||=C?.required==="hard-reload"),It},...d?.update}),Yn=(C,ae)=>{P=!0,C==="threw"?(Te?.(),m??=Ae(ae).toLowerCase()):L===void 0&&h(C==="timeout"?"claude.hot: accept handler did not answer in time - restarting":"claude.hot: accept handler settled without defer/restart/adopt - restarting");const W={__frame_hot_verdict:!0,id:o.id};W.verdict=C==="threw"||L===void 0||L==="restart"?"restart":L==="adopt"?"applied":"deferred",W.verdict==="restart"&&(M&&(W.required="hard-reload"),m!==void 0&&(W.note=m)),z!==void 0&&(W.verdict==="applied"||z!=="adopted")&&(W.adopt=z),$(Object.assign(W,d?.verdict),D)};let cr=!1;const Rt=(C,ae)=>cr?!1:(cr=!0,s(Jn),Yn(C,ae),!0),Jn=a(()=>Rt("timeout"),o.verdictTimeoutMs);Promise.resolve().then(()=>f(et)).then(()=>Rt("settled"),C=>{!Rt("threw",C)&&L==="adopt"&&ke({note:Ae(C).toLowerCase()}),h("claude.hot: accept",Ae(C))})};try{t.hot===void 0&&Object.defineProperty(t,"hot",{value:Ue,writable:!1,configurable:!1,enumerable:!1})}catch{}return{hot:Ue,boot:p,afterConnect(){be=!0,(e!==null||U!==null)&&Je()},onInit(o,f){D=f,G=!0;const d=Ft(o)?o:null;d?.phase==="final"&&e!==null&&e.gen===d.gen?(I=!0,w=Bt(w,Oe(d.from)),$n()):(q=d?.phase==="pending",de(q),I=!q,j=d?.gen??0,w=Oe(d?.from)),J(),ye&&a(()=>{Y||(Y=!0,J())},Gr),q&&U!==null&&$({__frame_hot_ready:!0,gen:j},f),y!==void 0&&(ke(y),y=void 0),ee()},onNoInit(){G=!0,de(!1),I=!0,ee()},onShell(o){return o?.__frame_revealed===!0?(gt(),!1):Jr(o)?(zn(o),!0):Zr(o)?(Wn(o),!0):on(o)?(Xn(o),!0):an(o)?(Vn(o),!0):!1},attachExtras(o){A=o,Q(),o.assess&&J()},inSlot:()=>Le(F),hydration(o,f){i??={expect:o,maxMs:f}},hydrated(){E()},carried(){return I?g:{}},presented:()=>ue}}var oo="frame_ldx_runtime",un="frame_ldx_build",ao="script#an-form",fn=256;function at(t,e,r){for(const n of t)r(n)&&t.delete(n);t.size>=fn&&!t.has(e)&&t.delete(t.values().next().value),t.add(e)}function Me(t,e,r,n){try{const a=t[e];if(typeof a!="function")return;t[e]=function(...s){if(n){let c;try{c=n(this)}catch{}if(c!==void 0)return c}const l=a.apply(this,s);try{r?.(this)}catch{}return l}}catch{}}var dn=()=>{},st;function hn(){if(st)return st;const t={media:new Set,contexts:new Set,wakeLocks:new Set,gate:null,refuse:null,onStart:null,onStop:null};st=t;const e=l=>t.gate?.(l),r=l=>{t.onStop?.(l)},n=window.HTMLMediaElement?.prototype;n&&(Me(n,"play",l=>{at(t.media,l,c=>c.paused),t.onStart?.(l)},e),Me(n,"pause",r));const a=window.AudioContext,s=window.AudioNode?.prototype;a&&s&&(Me(s,"connect",l=>{const c=l.context;c instanceof a&&(at(t.contexts,c,T=>T.state==="closed"),t.onStart?.(c))}),Me(a.prototype,"resume",void 0,e),Me(a.prototype,"suspend",r));try{const l=window.WakeLock?.prototype,c=l?.request;l&&typeof c=="function"&&(l.request=function(...T){if(t.refuse)return t.refuse();const _=c.apply(this,T);return Promise.resolve(_).then(v=>{at(t.wakeLocks,v,h=>h.released),t.onStart?.(v)},dn),_})}catch{}return t}function pn(t){let e=window;for(let r=0;e.parent&&e.parent!==e&&r<8;r++)if(e=e.parent,t(e))return!0;return!1}function mn(){let t=null;const e=()=>t??parent,r=n=>t?n===t:pn(a=>a===n);return{post(n,a){if(t){e().postMessage(n,a);return}let s=parent;for(let l=0;l<8&&(s.postMessage(n,a),!(!s.parent||s.parent===s));l++)s=s.parent},on(n){const a=s=>{const l=s.source;r(l)&&n(s.data,s.origin,s.isTrusted,()=>{t??=l})};return addEventListener("message",a),()=>removeEventListener("message",a)},port:n=>({post(a,s){if(s?.activation){e().postMessage(a,{targetOrigin:n,includeUserActivation:!0});return}if(s?.transfer){e().postMessage(a,n,s.transfer);return}e().postMessage(a,n)},on(a,s){const l=c=>{r(c.source)&&c.origin===n&&a(c.data,c)};return addEventListener("message",l,s),()=>removeEventListener("message",l,s)}})}}function vn(){const t={post:()=>{},on:()=>()=>{}};return{...t,port:()=>t}}var yn=500,_n=2e4,gn="data-token-reads",wn="data-frame-refused-watch",bn="data-frame-unsupported",En=/(?:^|\s)stylesheet(?:\s|$)/i;function Sn(t,e){let r="";if(t instanceof HTMLScriptElement?r=t.src:t instanceof HTMLLinkElement&&En.test(t.rel)&&(r=t.href),!r)return null;try{const n=new URL(r);return n.origin===location.origin&&n.pathname.startsWith(e)?n.origin+n.pathname:null}catch{return null}}function kn(t,e,r){if(!t||e!=="query")return;const n="/_f/"+t+"/";document.documentElement.setAttribute(wn,"");const a=location.href,s=fetch,l=setTimeout,c={method:"HEAD",cache:"no-store",credentials:"same-origin"},T=p=>p.ok||p.status===304;let _=!1,v=!1;const h=()=>removeEventListener("error",O,!0),k=async p=>{const F=await s(p,c);if(T(F))v=!0;else if(F.status===403){const R=await s(a,c);if(T(R)){const g=(await s(p,c)).status;g===403?(v=!0,document.documentElement.setAttribute(bn,""),r()):g<500&&(v=!0)}else R.status>=400&&R.status<500&&(v=!0)}},O=p=>{if(v||_)return;if(document.documentElement.hasAttribute(gn)){v=!0,h();return}const F=Sn(p.target,n);F&&(_=!0,l(()=>{k(F).catch(()=>{}).finally(()=>{_=!1,v&&h()})},yn))};addEventListener("error",O,!0),addEventListener("load",h,{once:!0}),l(h,_n)}var it="__frame_scroll",An=150,Rn=310,Tn=160,Ln=3e4,Kt="p,h1,h2,h3,h4,h5,h6,li,pre,blockquote,tr,dt,dd,figcaption,summary",Gt=()=>innerWidth<=Rn&&innerHeight<=Tn,$t=t=>{const e=document.createTreeWalker(t,NodeFilter.SHOW_TEXT);let r="";for(;r.length<600&&e.nextNode();)r+=e.currentNode.nodeValue.slice(0,600-r.length);const n=r.replace(/\s+/g," ").trim().slice(0,120);let a=2166136261;for(let s=0;s<n.length;s++)a=Math.imul(a^n.charCodeAt(s),16777619);return n.length>11?a>>>0||1:0},zt=t=>{for(let e=t;e&&e!==document.scrollingElement;e=e.parentElement){const r=getComputedStyle(e).position;if(r==="fixed"||r==="sticky"||e!==t&&e.scrollTop)return!1}return!0},On=()=>{const t=[],e=[];try{for(let r=0;r<16;r++){const n=document.elementFromPoint(innerWidth/(r%2?4:2),innerHeight*(r>>1)/8+1);let a=n?.closest(Kt)??n;for(;a&&!a.matches(Kt)&&![...a.childNodes].some(l=>l.nodeType===3&&l.nodeValue?.trim());)a=a.parentElement;const s=a&&!e.includes(a)?$t(a):0;s&&!t.some(l=>l[0]===s&&l[2]===a.tagName)&&zt(a)&&(e.push(a),t.push([s,Math.round(a.getBoundingClientRect().top),a.tagName]))}}catch{}return t.sort((r,n)=>+(r[1]<0)-+(n[1]<0)),t.length?t.slice(0,3):void 0},Mn=t=>{try{for(const[e,r,n]of t.a??[]){const a=document.getElementsByTagName(n);let s;for(let c=0;c<a.length&&a.length<5e3;c++)$t(a[c])===e&&(s=s===void 0||s?.contains(a[c])?a[c]:null);const l=s?.getBoundingClientRect();if(l?.height&&s.checkVisibility?.()!==!1&&zt(s)&&isFinite(r))return Math.max(0,Math.round(scrollY+l.top-r))}}catch{}return t.y};function Pn(){let t=0,e=!1,r=!1,n=!1,a={y:0},s=null;const l=w=>{try{sessionStorage.setItem(it,JSON.stringify(w))}catch{}},c=w=>{if(clearTimeout(t),s===null)return;const j=s;s=null,l({y:j,a:w&&j>0?On():void 0})},T=()=>{if(e){e=!1;return}r=!0,s=scrollY,clearTimeout(t),t=setTimeout(c,An,!0)};try{addEventListener("scroll",T,{passive:!0}),addEventListener("pagehide",()=>c())}catch{}const _=()=>{let w;try{w=sessionStorage.getItem(it)}catch{return null}if(w===null)return null;let j;try{j=JSON.parse(w)}catch{j=null}const{y:I,a:q}=j??{};if(!(typeof I=="number"&&Number.isFinite(I)&&I>=0)){try{sessionStorage.removeItem(it)}catch{}return null}const G=D=>Array.isArray(D)&&typeof D[0]=="number"&&Number.isFinite(D[1])&&typeof D[2]=="string";return{y:I,a:Array.isArray(q)&&q.length<4&&q.every(G)?q:void 0}};let v=!1,h=-1;const k=w=>{try{const j=scrollY,I=Mn(w);scrollTo({top:I,left:0,behavior:"instant"}),a=Gt()?w:{y:I,a:w.a},n=!0,clearTimeout(t),s=null,l(a),h=scrollY,h!==j&&(e=!0);const q=I!==w.y&&document.readyState!=="complete";(h!==I||q)&&!v&&(v=!0,addEventListener("load",()=>{try{scrollY===h&&k(_()??a)}catch{}},{once:!0}))}catch{}},O=()=>{try{return!!location.hash}catch{return!0}};let p=!1;const F=()=>{try{if(p||!Gt())return;p=!0;const w=Date.now(),j=()=>{try{removeEventListener("resize",j)}catch{}Date.now()-w>Ln||r||O()||k(_()??a)};addEventListener("resize",j)}catch{}};let R=!1,g=!1;return{restore(){if(R||(R=!0,O()))return;const w=_();w!==null&&(k(w),F())},promoted(){if(g||(g=!0,O()))return;const w=_();w!==null?(k(w),F()):n&&k(a)}}}function Nn(t,e,r,n){let a=null;try{a=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:T=>T})??null}catch{}const s=window.Worker,l=s?.prototype,c=Object.freeze({Worker:s,workerOn:l?.addEventListener,workerPost:l?.postMessage,workerTerminate:l?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,now:Date.now,policy:a,origins:e});r(t).then(T=>T?.bootTopLevel?T.bootTopLevel(c,n):n.settle()).catch(()=>n.settle())}var so="modulepreload",io=function(t){return"/"+t},lo={},Cn=function(e,r,n){let a=Promise.resolve();function s(l){const c=new Event("vite:preloadError",{cancelable:!0});if(c.payload=l,window.dispatchEvent(c),!c.defaultPrevented)throw l}return a.then(l=>{for(const c of l||[])c.status==="rejected"&&s(c.reason);return e().catch(s)})},Fn=window===top,Wt=Object.getOwnPropertyDescriptor(window,"claude"),ze=sn(Fn,window.__FRAME_PREAMBLE?.topLevel,Wt?.writable===!1),lt=typeof ze=="object"&&ze[0],x=lt?vn():mn();(function(){const t=Object.defineProperty,e=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let a=0;a<r.length;a++){const s=r[a];try{t(e,s,{value:void 0,writable:!1,configurable:!1})}catch{try{delete e[s]}catch{}try{t(e,s,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof e[s]=="function"&&n++}if(n&&ze==="framed")try{x.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var Vt=1e4,jn=2e3,ct=2e3,ut=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function Xt(t){for(const e of ut)if(e.endsWith(":*"))try{const r=new URL(t);if(`${r.protocol}//${r.hostname}:*`===e)return!0}catch{}else if(t===e)return!0;return!1}var Pe=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),Ne=window.__FRAME_PREAMBLE?.transforms,ft=window.__FRAME_PREAMBLE?.comments,dt=window.__FRAME_PREAMBLE?.translate,me=window.__FRAME_PREAMBLE?.ldx,We=fr(window.__FRAME_PREAMBLE?.cred),Yt=(()=>{try{const[t]=performance.getEntriesByType("navigation"),e=t?.serverTiming?.find(r=>r.name==="frame-cred-exp");return e!==void 0&&/^\d{1,15}$/.test(e.description)?dr(Number(e.description)):void 0}catch{return}})();function Jt(t){return Cn(()=>import("/_runtime/"+t),void 0)}var Ce=new Set,Zt=setTimeout,xn=fetch,In=AbortController,Dn=800+800*Math.random(),Hn=3e3,Ve=null,Qt=new Map;function qn(t,e){let r=Qt.get(t);return r||Qt.set(t,r=Bn(t,e)),r}function Bn(t,e){if(Ve?.has(t))return Promise.resolve("csp");if(navigator.onLine===!1)return Promise.resolve("offline");const r=new In;let n=!1;return Zt(()=>{n=!0,r.abort()},Hn),xn("/_runtime/"+t,{signal:r.signal}).then(a=>(r.abort(),a.ok?/javascript/i.test(a.headers.get("content-type")??"")?e instanceof Error&&/:\d+:\d+\)?$/m.test(e.stack??"")?"eval":"served":"mime":"http"),()=>n?"timeout":Ve?.has(t)?"csp":"net")}function se(t){if(!Ve){const e=Ve=new Set;try{document.addEventListener("securitypolicyviolation",r=>{const n=/\/_runtime\/([^/?#]+)/.exec(r.blockedURI);n&&r.disposition!=="report"&&e.add(n[1])})}catch{}}return Jt(t).catch(()=>new Promise(e=>Zt(e,Dn)).then(()=>Jt(t+"?r=1")).then(e=>(e!==void 0&&Ce.add(t),e)))}function er(t,e,r){return{contract:t.contract,changes:new Set(t.changes??[]),flags:new Set(t.flags??[]),capabilities:t.capabilities??{},capBudgets:t.capBudgets??{},brokerGen:t.brokerGen,transforms:new Map,shellOrigin:e,shell:r,mount:_t,hooks:Xe,pipe:()=>({wrap:(n,a)=>(...s)=>{try{return a(...s)}catch(l){return Promise.reject(l)}}})}}var we=null,V=null;function tr(t,e,r){try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(t,e,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var ht=!1,Xe={editBefore:null,edit:null};function Un(t,e,r=!1){const n=[];let a;if(r)try{Xe.editBefore?.(t)}catch{}for(const s of t.elements){const l=document.querySelector(`[data-id="${s.target}"]`);if(!l){a=s.target;break}if([...Object.keys(s.attrsSet??{}),...s.attrsRemoved??[]].some(c=>!yr(c)||_r(l,c))){a=s.target;break}if(s.text!==void 0&&(!Er(l)||Rr(l))){a=s.target;break}for(const[c,T]of Object.entries(s.attrsSet??{}))if(!nr(l,c)){try{l.setAttribute(c,T)}catch{}rr(l,c,T)}for(const c of s.attrsRemoved??[])nr(l,c)||(l.removeAttribute(c),rr(l,c,null));typeof s.text=="string"&&kr(l,s.text),n.push(s.target)}if(r)try{Xe.edit?.(t.seq,n,a)}catch{}if(a!==void 0){x.post({__frame_patch_miss:{seq:t.seq}},e);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:t.seq,targets:n}}))}catch{}}function rr(t,e,r){if(!(t instanceof HTMLInputElement))return;const n=e.toLowerCase();n==="checked"?t.checked=r!==null:n==="value"&&t.type!=="file"&&(t.value=r??"")}function nr(t,e){const r=e.toLowerCase(),n=t;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${t.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function or(t){const e=document.documentElement;t==="light"||t==="dark"?(e.dataset.theme=t,e.style.colorScheme=t,ht=!0):ht&&(delete e.dataset.theme,e.style.colorScheme="",ht=!1)}var ie=new Map,pt=null;function mt(){let t;const e={u:new Promise(r=>{t=r}),r:r=>{e.done=!0,t(r)},done:!1,nulled:!1};return e}function Ye(t,e){t.nulled=!0,t.ver=e,t.r(null)}function vt(t,e){for(const[r,n]of ie)n.done||(e&&n.asked?e(r,n):Ye(n,t))}function Kn(){for(const t of ie.values())if(t.asked&&!t.done)return!0;return!1}var Gn=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),yt=!1,_t=(t,e)=>{let r=ie.get(t);if(r?.nulled&&yt)r=mt(),ie.set(t,r);else if(!r||r.done){r?.nulled&&V&&x.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:t,phase:"install"}},V);return}const n=typeof e=="function"?Object.setPrototypeOf(e,Gn):Object.assign(Object.create(null),e);typeof n.then=="function"&&delete n.then,r.want=void 0,r.r(Object.freeze(n))};function ar(){const t=Wt?.value??{};tr(window,"claude",t);for(const e of Object.keys(Pe)){if(t[e]!==void 0){tr(t,e,t[e]);continue}ie.set(e,mt())}if(t.use===void 0){const e=r=>{if(typeof r!="string"||!Object.hasOwn(Pe,r))return Promise.resolve(null);let n=ie.get(r);return n?(pt&&(n.nulled||n.want!==void 0)&&(n=pt(r,n)),n.asked=!0,n.u):Promise.resolve(t[r]??null)};try{Object.defineProperty(t,"use",{value:e,writable:!0,configurable:!0,enumerable:!1})}catch{}}return t}if(ze==="framed"){let t;const e=Ne&&pe.test(Ne)?se(Ne).catch(u=>{t={f:Ne,e:u}}):Promise.resolve(void 0),r=u=>{if(u.type==="auxclick"&&u.button!==1)return;const b=u.target,y=b&&b.closest?b.closest("a[href],area[href]"):null;if(!y)return;const A=y.getAttribute("href");if(!A)return;let H;try{H=new URL(A,document.baseURI)}catch{return}if((H.protocol==="http:"||H.protocol==="https:")&&H.origin!==location.origin){u.preventDefault();const X=(y.getAttribute("target")??"").toLowerCase(),K=u.type==="auxclick"||u.metaKey||u.ctrlKey||u.shiftKey||u.altKey||!["","_self","_top","_parent"].includes(X);x.post({__frame_nav:!0,url:H.href,newTab:K},"*")}};addEventListener("click",r,!0),addEventListener("auxclick",r,!0);const n={},a=u=>{u.isTrusted&&(n.pointer=!0)},s=u=>{u.isTrusted&&(n.click=!0)};addEventListener("pointermove",a,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0});const l={cb:null};addEventListener("keydown",u=>l.cb?.(u),!0);const c={cb:null};addEventListener("keydown",u=>c.cb?.(u));const T=hn();e.then(u=>u?.installEscapeForward?.(l,b=>{V&&x.post(b,V)})),e.then(u=>{try{u?.installFocusKeep?.()}catch{}}),e.then(u=>{if(!u?.wireNav)return;const b=x.port("*");u.wireNav(b),removeEventListener("click",r,!0),removeEventListener("auxclick",r,!0),removeEventListener("pointermove",a,!0),removeEventListener("click",s,!0),u.wireEngagement?.(n,b,T)});let _=null;try{_=Pn()}catch{}const v=document.readyState==="loading"?new Promise(u=>document.addEventListener("DOMContentLoaded",()=>u(),{once:!0})):Promise.resolve();let h="dcl",k=!1;v.then(()=>{k=!0});let O=null,p=null;try{p=Ur(window.name),O=Dt(null,p)}catch{}const F=ar();let R=null;try{R=cn(F,O,{post:(u,b)=>x.post(u,b),dcl:v},p)}catch{}e.then(u=>{try{R&&u?.installHotExtras?.(R)}catch{}});let g=null;const w=()=>Array.isArray(g?.flags)&&g.flags.includes("frame_ldx_runtime")&&!!me&&pe.test(me)&&document.querySelector("script#an-form")!==null;try{R?.hydration(w,Kr)}catch{}let j=null,I=0;const q=x.on((u,b,y,A)=>{Xt(b)&&Mr(u)&&(A(),g=u.__frame_init,V=b,q(),clearTimeout(I),j?.())});if(We){const u=Yt===void 0?{__frame_cred:We}:{__frame_cred:We,exp:Yt};for(const b of ut)try{b.endsWith(":*")||x.post(u,b)}catch{}}x.post({__frame_connect:!0},"*");try{R?.afterConnect()}catch{}const G=setTimeout,D=clearTimeout;let be=()=>NaN,Fe=()=>[];try{be=performance.now.bind(performance),Fe=performance.getEntriesByType.bind(performance)}catch{}let je=0;const U=()=>{try{x.post({__frame_alive:!0},"*")}catch{}je=G(U,jn)},Ee=()=>D(je);U(),addEventListener("load",Ee,{once:!0});const xe=new Promise(u=>{j=u,I=setTimeout(()=>{q(),u()},Vt)}),le=new WeakSet;addEventListener("error",u=>{u.target&&le.add(u.target)},!0);try{kn(Ht(),We,()=>{e.then(u=>{try{u?.drawRefusedNotice?.()}catch{}})})}catch{}const ce=()=>{let u=[];try{u=[...document.querySelectorAll("link[rel~=stylesheet]:not([rel~=alternate])")].filter(y=>!y.sheet&&!y.disabled&&!le.has(y)&&y.getAttribute("href")&&URL.canParse(y.href)&&(!y.media||matchMedia(y.media).matches))}catch{}let b=u.length;return b===0?Promise.resolve():new Promise(y=>{try{const A=ct-be();A>0&&(h="sheets");const H=G(y,A>0?A<ct?A:ct:0),X=()=>{--b===0&&(D(H),y())};for(const K of u)K.addEventListener("load",X,{once:!0}),K.addEventListener("error",X,{once:!0})}catch{y()}})};v.then(()=>{try{_?.restore()}catch{}}),Promise.all([xe,v,e]).then(([,,u])=>{if(g?.hostOverlays!==!0||!V)return;let b=!1;try{b=u?.declaresCover?.()===!0}catch{}x.post({__frame_layout:{cover:b}},V)});const ve={cb:null};x.on((u,b)=>{if(Xt(b)&&Pr(u)){try{_?.promoted()}catch{}ve.cb?.()}}),xe.then(async()=>{if(!g||!V){vt();try{R?.onNoInit()}catch{}return}if(or(g.theme),g.hostVisible===!1&&e.then(i=>i?.applyHostVisible?.(!1,T)),g.hostKeys!==void 0){const i=V,E=g.hostKeys;e.then(S=>S?.installHostKeyForward?.(c,E,N=>x.post(N,i)))}try{R?.onInit(g.hot,V)}catch{}let u;const b=()=>{try{!u&&me&&w()&&(u=se(me),u.then(i=>i?.prefetch?.()).catch(()=>{}))}catch{}};b(),v.then(b);const y=V,A=x.port(y),H=(i,E)=>x.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:i,phase:E}},y),X=(i,E,S)=>{new Promise(N=>N(qn(E,S))).then(N=>H(i,N),()=>H(i))},K=i=>x.post({__frame_cap_recovered:{cap:i}},y);let te=g.brokerGen;const Y=()=>R?.boot.ver??"",ye=Y(),_e=(i,E)=>{const S=Y();D(E.t),E.want=S,E.t=G(()=>{E.done||Ye(E,S)},Vt),x.post({__frame_cap_want:!0,cap:i,ver:S},y)},$=(i,E)=>{const S=ie.get(i.cap),N=Pe[i.cap];if(!E||!S||S.done||S.want!==i.ver||!pe.test(N))return;if(D(S.t),S.want=void 0,te=i.brokerGen??te,i.ver!==Y()){_e(i.cap,S);return}if(!i.grant||i.cap==="network"){Ye(S,i.ver);return}const Z=we,Q=we={...Z,capabilities:{...Z.capabilities,[i.cap]:i.grant},capBudgets:{...Z.capBudgets,[i.cap]:{...Z.capBudgets[i.cap],...i.budgets}}};se(N).then(de=>{Ce.has(N)&&K(i.cap),Q.brokerGen=te,yt=!0;try{de?.install?.(Q)}catch{H(i.cap,"install")}finally{yt=!1}},de=>X(i.cap,N,de)).then(()=>{S.done||Ye(S,i.ver)})};let Ie=!1,J=!1;x.on((i,E,S)=>{if(E!==y)return;try{if(R?.onShell(i))return}catch{}if(Cr(i)&&or(i.__frame_theme.theme),en(i)&&$(i,S),S&&tn(i)&&(te=i.brokerGen??te),Nr(i)){const Q=i.__frame_host_visible.visible;e.then(de=>de?.applyHostVisible?.(Q,T))}Or(i)&&Un(i.__frame_patch,y,S);const N=i?.__fc_mode;N&&typeof N=="object"&&!Ie&&ft&&pe.test(ft)&&(Ie=!0,se(ft).then(Q=>Q.install?.(y,N.on===!0,A)).catch(()=>{}));const Z=i?.__ft_cmd;Z&&typeof Z=="object"&&!J&&dt&&pe.test(dt)&&(J=!0,se(dt).then(Q=>Q.install?.(y,Z,A)).catch(()=>{}))});const De=Object.keys(g.capabilities??{}).filter(i=>Object.hasOwn(Pe,i)).map(i=>[i,Pe[i]]).filter(i=>typeof i[1]=="string"&&pe.test(i[1])),re=y;let ue=!1,He=()=>{};const Je=new Promise(i=>{He=()=>{ue=!0,i()}}),Se=()=>(ue||(h="caps"),Je),qe=O!==null||Ft(g.hot)||g.hostVisible===!1||g.hostOverlays===!0;k&&(h="init");const Be=v.then(()=>qe?Se():new Promise(i=>G(i,0))).then(ce).then(()=>{let i=!0;try{i=qe||Kn()}catch{}return i?Se():void 0}).then(()=>{Ee();const i=hr(Fe,be);x.post(i?{__frame_ready:!0,nav:i,gate:h}:{__frame_ready:!0,gate:h},re),e.then(E=>{E?.installSizeReporter?.(re,ve,A),E?.installPaintReporter?.(A)})}),gt=await Promise.allSettled(De.map(([,i])=>se(i))),ee=await e;if(ee?.buildBoot||(t?X("_transforms",t.f,t.e):H("_transforms")),ee?.buildBoot)try{we=ee.buildBoot(g,ee.TRANSFORMS??{},{shellOrigin:re,mount:_t,hooks:Xe,shell:A},i=>x.post({__frame_cap_telemetry:i},re))}catch{H("_transforms","install"),we=er(g,re,A)}else we=er(g,re,A);ee?.buildBoot&&Ce.has(Ne??"")&&K("_transforms");const fe=we;fe.brokerGen=te,gt.forEach((i,E)=>{const[S,N]=De[E];if(i.status!=="fulfilled"){X(S,N,i.reason);return}Ce.has(N)&&K(S);try{i.value?.install?.(fe)}catch{H(S,"install")}});const ke=g.capWants===!0;ke&&(pt=(i,E)=>{const S=Y();if(!S)return E;if(!E.nulled)return E.want!==S&&_e(i,E),E;if(S===E.ver)return E;const N=mt();return ie.set(i,N),_e(i,N),N}),vt(ye,ke&&Y()!==ye?_e:void 0),He(),await Be;let Ue=!1;try{Ue=w()}catch{}me&&Ue?(u??se(me)).then(i=>i?.boot?.({shellOrigin:y,build:fe.flags.has(un),hot:R?.hot??null,carried:R?.carried(),presented:()=>R?.presented()??!0})).catch(()=>!1).then(i=>{R?.hydrated(),i!==!0?H("_ldx"):Ce.has(me)&&K("_ldx")}):R?.hydrated()})}else lt&&(ar(),Nn(lt,ut,se,{settle:vt,mount:_t}))})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>UAT Cheat Sheet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="stylesheet" href="./css2">
+<style>
+/* Layout: dense masonry of reference panels (CSS columns), header strip on top, like a lab-bench card */
+:root{
+  --bg:#eef1f4; --panel:#ffffff; --ink:#18202b; --muted:#5b6675; --line:#d5dbe3;
+  --accent:#2453c7; --accent-soft:#e3eafb;
+  --bad:#c23b2a; --bad-soft:#fbe7e3; --ok:#1f8a4c; --ok-soft:#e1f3e8; --warn:#b7791f; --warn-soft:#fbf0dc;
+  --code-bg:#f5f7fa; --c-kw:#7b3fbf; --c-str:#1f7a5a; --c-num:#b25b00; --c-com:#8a94a3; --c-fn:#2453c7;
+  --f-display:"Archivo","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f141b; --panel:#171e28; --ink:#e4e9f0; --muted:#97a3b3; --line:#2a3442;
+  --accent:#7aa2ff; --accent-soft:#1d2a47;
+  --bad:#ff7a66; --bad-soft:#3a1d1a; --ok:#5fd08f; --ok-soft:#163222; --warn:#f0b35a; --warn-soft:#3a2c14;
+  --code-bg:#111821; --c-kw:#c39bff; --c-str:#7fd6ae; --c-num:#ffb36b; --c-com:#6c7889; --c-fn:#8fb2ff;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f141b; --panel:#171e28; --ink:#e4e9f0; --muted:#97a3b3; --line:#2a3442;
+  --accent:#7aa2ff; --accent-soft:#1d2a47;
+  --bad:#ff7a66; --bad-soft:#3a1d1a; --ok:#5fd08f; --ok-soft:#163222; --warn:#f0b35a; --warn-soft:#3a2c14;
+  --code-bg:#111821; --c-kw:#c39bff; --c-str:#7fd6ae; --c-num:#ffb36b; --c-com:#6c7889; --c-fn:#8fb2ff;
+  color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px;line-height:1.45}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:16px;padding-block:20px 40px}
+header{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:8px 24px;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:16px}
+h1{font-family:var(--f-display);font-stretch:80%;font-weight:800;font-size:clamp(26px,4vw,38px);line-height:1;margin:0;letter-spacing:-.01em;text-wrap:balance}
+h1 span{color:var(--accent)}
+.thesis{margin:0;color:var(--muted);max-width:60ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,330px),1fr));gap:14px;align-items:start}
+.step{display:flex;align-items:center;gap:8px}
+.no{font:600 11px var(--f-mono);color:var(--muted);letter-spacing:0}
+.card{break-inside:avoid;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px 14px;margin:0;display:flex;flex-direction:column;gap:8px;min-width:0}
+h2{font-family:var(--f-display);font-stretch:85%;font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:.08em;margin:0;color:var(--accent);display:flex;justify-content:space-between;align-items:center;gap:8px}
+p{margin:0}
+.small{font-size:12.5px;color:var(--muted)}
+ul.rules{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+b{font-weight:600}
+code{font-family:var(--f-mono);font-size:12px;background:var(--code-bg);padding:1px 4px;border-radius:3px}
+.snip{position:relative;min-width:0}
+pre{margin:0;background:var(--code-bg);border:1px solid var(--line);border-radius:4px;padding:8px 10px;overflow-x:auto;font-family:var(--f-mono);font-size:11.5px;line-height:1.5;tab-size:4;padding-top:22px}
+pre code{background:none;padding:0}
+.k{color:var(--c-kw)}.s{color:var(--c-str)}.n{color:var(--c-num)}.c{color:var(--c-com);font-style:italic}.f{color:var(--c-fn)}
+.copy{position:absolute;top:4px;right:4px;font:500 11px var(--f-body);background:var(--panel);color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:1px 7px;cursor:pointer;opacity:.85}
+.copy:hover{color:var(--accent);border-color:var(--accent)}
+.copy:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.formula{font-family:var(--f-mono);font-size:15px;text-align:center;padding:8px;background:var(--accent-soft);border-radius:4px}
+.formula i{font-style:italic}
+table{width:100%;border-collapse:collapse;font-size:12.5px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:4px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;color:var(--muted);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+td.num{text-align:right;font-family:var(--f-mono);font-size:12px}
+.tbl{overflow-x:auto}
+ol.loop{margin:0;padding-left:0;list-style:none;counter-reset:s;display:flex;flex-direction:column;gap:3px}
+ol.loop li{counter-increment:s;display:grid;grid-template-columns:20px 1fr;gap:6px;align-items:baseline}
+ol.loop li::before{content:counter(s);font:700 11px var(--f-mono);color:var(--panel);background:var(--accent);border-radius:50%;width:18px;height:18px;display:grid;place-items:center}
+.fail{display:grid;grid-template-columns:1fr;gap:8px}
+.fm{border-left:3px solid var(--bad);padding:2px 0 2px 9px;display:flex;flex-direction:column;gap:3px}
+.fm .t{font-weight:600}
+.fm .sym{font-size:12.5px;color:var(--muted)}
+.pill{display:inline-block;font:600 10.5px var(--f-mono);padding:1px 6px;border-radius:10px;white-space:nowrap}
+.pill.bad{background:var(--bad-soft);color:var(--bad)}.pill.ok{background:var(--ok-soft);color:var(--ok)}.pill.warn{background:var(--warn-soft);color:var(--warn)}
+.fix{font-family:var(--f-mono);font-size:11.5px;display:grid;grid-template-columns:auto 1fr;gap:1px 6px;align-items:baseline}
+.fix .lbl{font:600 10px var(--f-body);letter-spacing:.06em;text-transform:uppercase}
+.fix .lbl.x{color:var(--bad)}.fix .lbl.y{color:var(--ok)}
+.fix span.v{overflow-wrap:anywhere}
+.lr{display:grid;grid-template-columns:repeat(6,1fr);gap:3px}
+.lr div{border-radius:4px;padding:6px 2px;text-align:center;display:flex;flex-direction:column;gap:1px;font-variant-numeric:tabular-nums}
+.lr .x{font:600 11px var(--f-mono)}.lr .m{font:400 11px var(--f-mono)}.lr .st{font-size:10px;text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.lr .fz{background:var(--warn-soft);color:var(--warn)}.lr .gd{background:var(--ok-soft);color:var(--ok)}.lr .dv{background:var(--bad-soft);color:var(--bad)}
+svg{display:block;max-width:100%;height:auto}
+svg text{font-family:var(--f-mono);font-size:10px;fill:var(--muted)}
+svg .ax{stroke:var(--line);stroke-width:1}
+svg .pre{stroke:var(--muted);stroke-dasharray:3 3;fill:none;stroke-width:1}
+svg .out{stroke:var(--accent);stroke-width:2.5;fill:none}
+svg .kink{fill:var(--accent)}
+svg .bar{fill:var(--accent)}
+svg .bar.weak{fill:var(--bad)}
+svg text.lbl{fill:var(--ink);font-family:var(--f-body);font-size:11px}
+svg text.hi{fill:var(--accent)}
+.check{display:grid;grid-template-columns:auto 1fr;gap:4px 10px;font-size:13px;align-items:baseline}
+.check .q{font-weight:600}
+footer{margin-top:4px;color:var(--muted);font-size:12px}
+@media (max-width:420px){.lr{grid-template-columns:repeat(3,1fr)}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+<header>
+  <h1>Universal Approximation <span>Theorem</span></h1>
+  <p class="thesis">One hidden layer + a nonlinearity can fit any continuous function on [a, b] if it's wide enough. Training still has to find the weights.</p>
+</header>
+
+<div class="grid">
+
+<section class="card">
+  <h2><span class="step"><span class="no">01</span>The idea</span></h2>
+  <div class="formula"><i>f̂</i>(x) = b + Σ<sub>i=1..n</sub> w<sub>i</sub> · σ(v<sub>i</sub>x + c<sub>i</sub>)</div>
+  <ul class="rules">
+    <li><b>Existence ≠ learnable.</b> UAT promises good weights exist. It says nothing about gradient descent finding them or about generalizing.</li>
+    <li><b>Nonlinearity is required.</b> Linear ∘ linear = linear, so stacked layers with no activation act as one layer.</li>
+    <li><b>Width = bends.</b> n ReLU units give at most n + 1 straight pieces.</li>
+    <li><b>Regression output:</b> no final activation, loss = MSE.</li>
+  </ul>
+</section>
+
+<section class="card">
+  <h2><span class="step"><span class="no">02</span>Setup + data</span></h2>
+  <div class="snip"><pre><code><span class="k">import</span> numpy <span class="k">as</span> np
+<span class="k">import</span> matplotlib.pyplot <span class="k">as</span> plt
+<span class="k">import</span> torch, torch.nn <span class="k">as</span> nn
+torch.<span class="f">manual_seed</span>(<span class="n">42</span>); np.random.<span class="f">seed</span>(<span class="n">42</span>)
+
+<span class="k">def</span> <span class="f">target</span>(x):   <span class="c"># 3 frequencies</span>
+    <span class="k">return</span> (np.<span class="f">sin</span>(<span class="n">2</span>*np.pi*x) + <span class="n">0.5</span>*np.<span class="f">sin</span>(<span class="n">6</span>*np.pi*x)
+            + <span class="n">0.3</span>*np.<span class="f">cos</span>(<span class="n">10</span>*np.pi*x))
+
+x = np.<span class="f">linspace</span>(-<span class="n">1</span>, <span class="n">1</span>, <span class="n">500</span>, dtype=np.float32)
+x = x.<span class="f">reshape</span>(-<span class="n">1</span>, <span class="n">1</span>)
+X, y = torch.<span class="f">tensor</span>(x), torch.<span class="f">tensor</span>(<span class="f">target</span>(x))</code></pre><button class="copy" type="button">Copy</button></div>
+  <p class="small">Inputs must be shape <code>(N, 1)</code> and <code>float32</code>.</p>
+</section>
+
+<section class="card">
+  <h2><span class="step"><span class="no">03</span>Model</span></h2>
+  <div class="snip"><pre><code><span class="k">class</span> <span class="f">Net</span>(nn.Module):
+    <span class="k">def</span> <span class="f">__init__</span>(self, n=<span class="n">20</span>, act=torch.relu):
+        <span class="k">super</span>().<span class="f">__init__</span>()
+        self.h = nn.<span class="f">Linear</span>(<span class="n">1</span>, n)  <span class="c"># in → hidden</span>
+        self.o = nn.<span class="f">Linear</span>(n, <span class="n">1</span>)  <span class="c"># hidden → out</span>
+        self.act = act
+    <span class="k">def</span> <span class="f">forward</span>(self, x):
+        <span class="k">return</span> self.<span class="f">o</span>(self.<span class="f">act</span>(self.<span class="f">h</span>(x)))
+
+<span class="c"># same thing, one line</span>
+net = nn.<span class="f">Sequential</span>(nn.<span class="f">Linear</span>(<span class="n">1</span>, <span class="n">20</span>), nn.<span class="f">ReLU</span>(),
+                    nn.<span class="f">Linear</span>(<span class="n">20</span>, <span class="n">1</span>))</code></pre><button class="copy" type="button">Copy</button></div>
+</section>
+
+<section class="card">
+  <h2><span class="step"><span class="no">04</span>Training loop</span></h2>
+  <div class="snip"><pre><code>opt = torch.optim.<span class="f">Adam</span>(net.<span class="f">parameters</span>(),
+                       lr=<span class="n">0.01</span>)
+loss_fn = nn.<span class="f">MSELoss</span>()
+net.<span class="f">train</span>()
+<span class="k">for</span> step <span class="k">in</span> <span class="f">range</span>(<span class="n">3000</span>):
+    opt.<span class="f">zero_grad</span>()
+    loss = <span class="f">loss_fn</span>(<span class="f">net</span>(X), y)
+    loss.<span class="f">backward</span>()
+    opt.<span class="f">step</span>()
+net.<span class="f">eval</span>()
+<span class="k">with</span> torch.<span class="f">no_grad</span>():
+    pred = <span class="f">net</span>(X).<span class="f">numpy</span>()</code></pre><button class="copy" type="button">Copy</button></div>
+  <ol class="loop">
+    <li><span><code>zero_grad()</code> clears old gradients (they add up otherwise)</span></li>
+    <li><span><code>net(X)</code> forward pass, then the loss</span></li>
+    <li><span><code>backward()</code> computes every ∂L/∂θ</span></li>
+    <li><span><code>step()</code> updates θ ← θ − α·∇L</span></li>
+    <li><span><code>eval()</code> + <code>no_grad()</code> for predictions</span></li>
+  </ol>
+</section>
+
+<section class="card">
+  <h2><span class="step"><span class="no">05</span>Width sweep</span> <span class="pill ok">more = better</span></h2>
+  <svg viewBox="0 0 300 112" role="img" aria-label="Final MSE by width: 2 neurons 0.522, 5 neurons 0.199, 20 neurons 0.150, 100 neurons 0.149">
+    <text x="0" y="10" class="lbl">neurons</text><text x="300" y="10" text-anchor="end">final MSE (0 – 0.6)</text>
+    <g>
+      <text x="0" y="33" class="lbl">2</text><rect class="bar weak" x="34" y="22" width="187" height="14" rx="2"></rect><text x="226" y="33">0.522</text>
+      <text x="0" y="57" class="lbl">5</text><rect class="bar" x="34" y="46" width="71" height="14" rx="2"></rect><text x="110" y="57">0.199</text>
+      <text x="0" y="81" class="lbl">20</text><rect class="bar" x="34" y="70" width="54" height="14" rx="2"></rect><text x="93" y="81">0.150</text>
+      <text x="0" y="105" class="lbl">100</text><rect class="bar" x="34" y="94" width="53" height="14" rx="2"></rect><text x="92" y="105">0.149</text>
+    </g>
+  </svg>
+  <div class="snip"><pre><code><span class="k">for</span> n <span class="k">in</span> [<span class="n">2</span>, <span class="n">5</span>, <span class="n">20</span>, <span class="n">100</span>]:
+    torch.<span class="f">manual_seed</span>(<span class="n">42</span>)
+    pred, mse = <span class="f">train</span>(<span class="f">Net</span>(n))</code></pre><button class="copy" type="button">Copy</button></div>
+  <p class="small">ReLU, Adam lr=0.01, 3000 steps. Gains flatten after ~20 neurons.</p>
+</section>
+
+<section class="card">
+  <h2><span class="step"><span class="no">06</span>Activations</span></h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Name</th><th>Call</th><th>Use when</th><th class="num">MSE*</th></tr></thead>
+    <tbody>
+      <tr><td>ReLU</td><td><code>torch.relu</code></td><td>Default; cheap</td><td class="num">0.224</td></tr>
+      <tr><td>Tanh</td><td><code>torch.tanh</code></td><td>Zero-centred; RNNs</td><td class="num">0.090</td></tr>
+      <tr><td>Sigmoid</td><td><code>torch.sigmoid</code></td><td>Small nets</td><td class="num">0.150</td></tr>
+      <tr><td>Leaky</td><td><code>F.leaky_relu(h, 0.01)</code></td><td>Dead ReLUs</td><td class="num">0.154</td></tr>
+      <tr><td>GELU</td><td><code>F.gelu</code></td><td>Transformers</td><td class="num">0.156</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">*20 neurons, 1500 steps. These shift between runs (tanh ranged 0.04–0.12 in the notebook), so don't rank them on one seed.</p>
+</section>
+
+<section class="card">
+  <h2><span class="step"><span class="no">07</span>Deep vs wide</span></h2>
+  <div class="snip"><pre><code><span class="k">def</span> <span class="f">deep</span>(width=<span class="n">10</span>, depth=<span class="n">6</span>):
+    layers = [nn.<span class="f">Linear</span>(<span class="n">1</span>, width), nn.<span class="f">ReLU</span>()]
+    <span class="k">for</span> _ <span class="k">in</span> <span class="f">range</span>(depth - <span class="n">1</span>):
+        layers += [nn.<span class="f">Linear</span>(width, width),
+                   nn.<span class="f">ReLU</span>()]
+    <span class="k">return</span> nn.<span class="f">Sequential</span>(*layers,
+                         nn.<span class="f">Linear</span>(width, <span class="n">1</span>))
+
+n_params = <span class="f">sum</span>(p.<span class="f">numel</span>()
+               <span class="k">for</span> p <span class="k">in</span> net.<span class="f">parameters</span>())</code></pre><button class="copy" type="button">Copy</button></div>
+  <p class="small">Each layer bends the previous layer's bends, so depth multiplies pieces. Count before you claim savings: wide 100×1 = <b>301</b> params, deep 10×6 = <b>581</b>.</p>
+</section>
+
+<section class="card">
+  <h2><span class="step"><span class="no">08</span>4 failure modes</span></h2>
+  <div class="fail">
+    <div class="fm">
+      <span class="t">No nonlinearity <span class="pill bad">MSE 0.566</span></span>
+      <span class="sym">Straight-line fit; adding depth doesn't help.</span>
+      <div class="fix"><span class="lbl x">bad</span><span class="v">Linear(1,64), Linear(64,64), Linear(64,1)</span><span class="lbl y">fix</span><span class="v">nn.ReLU() between every Linear</span></div>
+    </div>
+    <div class="fm">
+      <span class="t">LR too high <span class="pill bad">NaN</span></span>
+      <span class="sym">Loss grows each step, NaN within ~10 steps.</span>
+      <div class="fix"><span class="lbl x">bad</span><span class="v">SGD(lr=10.0)</span><span class="lbl y">fix</span><span class="v">lr=0.01 + clip_grad_norm_(params, 1.0)</span></div>
+    </div>
+    <div class="fm">
+      <span class="t">LR too low <span class="pill bad">MSE 0.622</span></span>
+      <span class="sym">Loss frozen at its starting value.</span>
+      <div class="fix"><span class="lbl x">bad</span><span class="v">SGD(lr=1e-8)</span><span class="lbl y">fix</span><span class="v">Adam(lr=0.01)</span></div>
+    </div>
+    <div class="fm">
+      <span class="t">Too few neurons <span class="pill bad">MSE 0.669</span></span>
+      <span class="sym">Coarse V-shape; not enough bends.</span>
+      <div class="fix"><span class="lbl x">bad</span><span class="v">Linear(1,2) → ReLU → Linear(2,1)</span><span class="lbl y">fix</span><span class="v">width 20+ (100 ≈ exact)</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="card">
+  <h2><span class="step"><span class="no">09</span>Debug a bad run</span></h2>
+  <div class="check">
+    <span class="q">NaN?</span><span>LR too high → lower it, clip gradients</span>
+    <span class="q">Frozen?</span><span>LR too low → raise it or use Adam</span>
+    <span class="q">Straight line?</span><span>Missing activation → add ReLU</span>
+    <span class="q">Coarse fit?</span><span>Too narrow → add neurons</span>
+  </div>
+  <div class="snip"><pre><code><span class="c"># after loss.backward():</span>
+torch.nn.utils.<span class="f">clip_grad_norm_</span>(
+    net.<span class="f">parameters</span>(), max_norm=<span class="n">1.0</span>)
+<span class="c"># stop on divergence:</span>
+<span class="k">if</span> torch.<span class="f">isnan</span>(loss): <span class="k">break</span></code></pre><button class="copy" type="button">Copy</button></div>
+</section>
+
+<section class="card">
+  <h2><span class="step"><span class="no">10</span>One ReLU neuron</span></h2>
+  <svg viewBox="0 0 300 150" role="img" aria-label="ReLU neuron: flat at height b, then a straight ramp starting at x equals minus c over v">
+    <line class="ax" x1="20" y1="120" x2="290" y2="120"></line>
+    <line class="ax" x1="150" y1="10" x2="150" y2="135"></line>
+    <line class="pre" x1="40" y1="150" x2="270" y2="30"></line>
+    <polyline class="out" points="20,104 120,104 270,24"></polyline>
+    <circle class="kink" cx="120" cy="104" r="4"></circle>
+    <line class="ax" x1="120" y1="104" x2="120" y2="120" stroke-dasharray="2 2"></line>
+    <text x="120" y="133" text-anchor="middle" class="hi">x = −c/v</text>
+    <text x="24" y="98">b (lift)</text>
+    <text x="210" y="80">slope = w·v</text>
+    <text x="290" y="146" text-anchor="end">dashed: pre-activation v·x + c</text>
+  </svg>
+  <div class="snip"><pre><code>out = w * np.<span class="f">maximum</span>(<span class="n">0</span>, v*x + c) + b</code></pre><button class="copy" type="button">Copy</button></div>
+  <p class="small"><b>v</b> slope + direction · <b>c</b> moves the kink · <b>w</b> scales or flips · <b>b</b> lifts. A net is a sum of these ramps.</p>
+</section>
+
+<section class="card">
+  <h2><span class="step"><span class="no">11</span>Learning rate map</span> <span class="pill warn">SGD, 3000 steps</span></h2>
+  <div class="lr" role="list">
+    <div class="fz" role="listitem"><span class="x">1e-8</span><span class="m">0.622</span><span class="st">frozen</span></div>
+    <div class="fz" role="listitem"><span class="x">1e-6</span><span class="m">0.622</span><span class="st">frozen</span></div>
+    <div class="fz" role="listitem"><span class="x">1e-4</span><span class="m">0.590</span><span class="st">slow</span></div>
+    <div class="gd" role="listitem"><span class="x">1e-2</span><span class="m">0.382</span><span class="st">best</span></div>
+    <div class="dv" role="listitem"><span class="x">1.0</span><span class="m">174.6</span><span class="st">blows up</span></div>
+    <div class="dv" role="listitem"><span class="x">10</span><span class="m">NaN</span><span class="st">NaN</span></div>
+  </div>
+  <p class="small">Defaults: Adam 1e-2, SGD 1e-2 to 1e-1. Too small: updates fall below float32 precision, so weights round back to where they were.</p>
+</section>
+
+<section class="card">
+  <h2><span class="step"><span class="no">12</span>Plot a fit</span></h2>
+  <div class="snip"><pre><code>fig, axes = plt.<span class="f">subplots</span>(<span class="n">1</span>, <span class="n">4</span>, figsize=(<span class="n">20</span>, <span class="n">4</span>))
+<span class="k">for</span> ax, n <span class="k">in</span> <span class="f">zip</span>(axes, [<span class="n">2</span>, <span class="n">5</span>, <span class="n">20</span>, <span class="n">100</span>]):
+    ax.<span class="f">plot</span>(x, y, <span class="s">'b-'</span>, alpha=<span class="n">0.6</span>, label=<span class="s">'Target'</span>)
+    ax.<span class="f">plot</span>(x, pred, <span class="s">'r--'</span>,
+            label=f<span class="s">'{n} neurons MSE={mse:.3f}'</span>)
+    ax.<span class="f">legend</span>(); ax.<span class="f">grid</span>(alpha=<span class="n">0.3</span>)
+plt.<span class="f">tight_layout</span>(); plt.<span class="f">show</span>()
+<span class="c"># loss curve: ax.set_yscale('log')</span>
+<span class="c"># LR sweep:   plt.semilogx(lrs, mses)</span></code></pre><button class="copy" type="button">Copy</button></div>
+</section>
+
+<section class="card">
+  <h2><span class="step"><span class="no">13</span>Python shortcuts</span></h2>
+  <div class="snip"><pre><code><span class="c"># dict comprehension</span>
+{k: <span class="s">f"{v:.4f}"</span> <span class="k">for</span> k, v <span class="k">in</span> d.<span class="f">items</span>()}
+<span class="c"># key with the lowest MSE</span>
+best = <span class="f">min</span>(d, key=d.get)
+<span class="c"># pair two lists</span>
+<span class="f">dict</span>(<span class="f">zip</span>(widths, mses))
+<span class="c"># pick a class by flag</span>
+Opt = torch.optim.Adam <span class="k">if</span> a <span class="k">else</span> torch.optim.SGD</code></pre><button class="copy" type="button">Copy</button></div>
+</section>
+
+</div>
+<footer>Numbers come from the outputs in 1-UAT.ipynb. Target: sin(2πx) + 0.5·sin(6πx) + 0.3·cos(10πx) on [−1, 1], 500 points.</footer>
+</div>
+
+<script>
+(function(){
+  var KW=/\b(import|from|as|def|class|return|for|in|if|else|with|lambda|None|True|False|break|super)\b/;
+  function hl(src){
+    var out='',re=/(#[^\n]*)|(f?"[^"\n]*"|'[^'\n]*')|(\b\d+(?:\.\d+)?(?:e-?\d+)?\b)|(\b[A-Za-z_]\w*\b)/g,last=0,m;
+    function esc(s){return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+    while((m=re.exec(src))){
+      out+=esc(src.slice(last,m.index));
+      if(m[1])out+='<span class="c">'+esc(m[1])+'</span>';
+      else if(m[2])out+='<span class="s">'+esc(m[2])+'</span>';
+      else if(m[3])out+='<span class="n">'+m[3]+'</span>';
+      else if(KW.test(m[4])&&m[4].length===m[4].match(KW)[0].length)out+='<span class="k">'+m[4]+'</span>';
+      else if(src[re.lastIndex]==='(')out+='<span class="f">'+m[4]+'</span>';
+      else out+=m[4];
+      last=re.lastIndex;
+    }
+    return out+esc(src.slice(last));
+  }
+  document.querySelectorAll('.snip pre code').forEach(function(c){
+    var raw=c.textContent; c.innerHTML=hl(raw);
+    var b=document.createElement('button'); b.className='copy'; b.type='button'; b.textContent='Copy';
+    b.addEventListener('click',function(){
+      function done(t){b.textContent=t;setTimeout(function(){b.textContent='Copy';},1400);}
+      try{navigator.clipboard.writeText(raw).then(function(){done('Copied');},function(){sel();});}catch(e){sel();}
+      function sel(){var r=document.createRange();r.selectNodeContents(c);var s=getSelection();s.removeAllRanges();s.addRange(r);done('Selected');}
+    });
+    c.parentNode.parentNode.appendChild(b);
+  });
+})();
+</script>
+
+</body></html>
