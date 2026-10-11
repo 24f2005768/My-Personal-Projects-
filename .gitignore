@@ -32,6 +32,15 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+# Secrets
+.env
+.env.*
+!.env.example
+secrets.txt
+
+# Nested git backups
+**/.git_backup/
+**/.git/
 
 # ---- Quarto ----
 /.quarto/
